@@ -12,6 +12,7 @@
 */
 
 
-Auth::routes();
+Route::get('/register','auth\RegisterController@showRegistrationForm')->name('register');
+Route::get('/login','auth\LoginController@login')->name('login');
 
 Route::get('/home', 'HomeController@index')->name('home');
